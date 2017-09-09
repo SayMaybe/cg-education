@@ -113,13 +113,13 @@ header {
 }
 .teacher-profile {
   display:flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  flex-basis: 30%;
+  flex-flow: column wrap-reverse;
   padding:.5%;
   margin: 1%;
   border-style: solid;
   border-width: 2px;
+  height:auto;
+
 }
 .teacher-grid {
   display: flex;
