@@ -43,17 +43,17 @@ abbr,acronym { border:0;
 /* Start my CSS*/
 
   .container {
-    width: 100%;
-    margin: 4% 3%;
+    width: 90%;
+    margin: 5%;
 }
 h1 {
   font-family: 'PT Sans Narrow Bold', sans-serif;
-  font-size: 1.875em;
+  font-size: .5em;
   color: #323232;
 }
 h2 {
   font-family: 'PT Sans Narrow Bold', sans-serif;
-  font-size: 1.5em;
+  font-size: .5em;
   color: #00897f;
   text-transform: uppercase;
 }
@@ -103,14 +103,14 @@ header {
 .teacher-grid {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
+  flex-wrap: nowrap;
+  }
 .teacher-box {
   display:flex;
   flex-flow: column wrap;
-  margin-left: 1%;
   width: 33%;
+  justify-content: space-around;
+  margin-right: 3%;
 
 }
 .teacher-profile {
@@ -142,6 +142,7 @@ header {
 .teacher-rating {
   display: flex;
   flex-flow:column;
+  align-items: center;
   justify-content: space-around;
   border-style: solid;
   border-width: 1px;
