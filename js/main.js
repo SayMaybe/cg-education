@@ -1,7 +1,7 @@
 console.log("This is a file.");
-var firstName = 'Betsy';
-var lastName = 'Jones';
-var teacherName = firstName + " " + lastName;
+var teacherFirstName = 'Betsy';
+var teacherLastName = 'Jones';
+var teacherName = teacherFirstName + " " + teacherLastName;
 console.log(teacherName);
 /*var teacherList = [{firstName: 'Betsy', lastName: 'Jones', department: 'Physics'},
                     {firstName: 'John', lastName: 'Fleming', department: 'Astronomy'}];
@@ -25,3 +25,11 @@ console.log("Teacher: " + teacherName);
 console.log("Department: " + department);
 console.log("Ratings: " + ratingOne + ratingTwo + ratingThree);
 console.log("Average Rating: " + Math.round(avgRating * 100) / 100);
+var studentFirstName = 'Joe';
+var studentLastName = 'Camel';
+var studentName = studentFirstName + " " + studentLastName;
+console.log(studentName);
+var major = 'Astrology';
+var email = 'jos.camel@esp.com';
+var gpa = '3.2';
+var course = 'Goat Tending';
