@@ -1,4 +1,4 @@
-console.log("This is a file.");
+/*console.log("This is a file.");
 var teacherFirstName = 'Betsy';
 var teacherLastName = 'Jones';
 var teacherName = teacherFirstName + " " + teacherLastName;
@@ -15,7 +15,7 @@ teacher.firstName = 'John';
 teacher.lastName = 'Fleming';
 teacher.department = 'Astronomy';
 teacherList.push(teacher);
-console.log(teacherList);*/
+console.log(teacherList);
 var department = 'Physics';
 var ratingOne = 1.25;
 var ratingTwo = 5.0;
@@ -33,3 +33,9 @@ var major = 'Astrology';
 var email = 'jos.camel@esp.com';
 var gpa = '3.2';
 var course = 'Goat Tending';
+var semester = "Fall 2017";
+console.log("Major: " + major);
+console.log("email: " + email)
+console.log("GPA: " + gpa)
+console.log("Course: " + course)
+console.log("Semester: " + semester)*/
