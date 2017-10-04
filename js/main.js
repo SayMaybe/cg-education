@@ -18,6 +18,20 @@ function getRatingAvg(teacherRatings) {
   return Math.round((totalRatings / teacherRatings.length) * 10) / 10;
 }
 console.log(getRatingAvg (teacherRatings));
+var rating = 0;
+function valid(rating) {
+  if (rating >= 1.0 && rating <= 5.0){
+    return true;
+  }
+  return false;
+}
+prompt("Please give a rating between 1.0 and 5.0");
+while (!valid(rating)){
+  rating = prompt("Please give a rating between 1.0 and 5.0");
+  teacherRatings = function addTeacherRating(teacherRatings[], rating);
+  console.log("Good job!");
+
+}
 
 /*console.log(studentName);
 var major = 'Astrology';
