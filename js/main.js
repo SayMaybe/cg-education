@@ -18,6 +18,7 @@ function getRatingAvg(teacherRatings) {
   return Math.round((totalRatings / teacherRatings.length) * 10) / 10;
 }
 console.log(getRatingAvg (teacherRatings));
+console.log(teacherRatings);
 var rating = 0;
 function valid(rating) {
   if (rating >= 1.0 && rating <= 5.0){
@@ -25,10 +26,17 @@ function valid(rating) {
   }
   return false;
 }
-prompt("Please give a rating between 1.0 and 5.0");
+function addTeacherRating(teacherRatings, rating) {
+    teacherRatings.push(rating);
+    return teacherRatings;
+}
 while (!valid(rating)){
   rating = prompt("Please give a rating between 1.0 and 5.0");
-  teacherRatings = function addTeacherRating(teacherRatings[], rating);
+  console.log("rating " + rating);
+  console.log(teacherRatings);
+  teacherRatings = addTeacherRating(teacherRatings, rating);
+  console.log("teacherRatings " + teacherRatings);
+
   console.log("Good job!");
 
 }
