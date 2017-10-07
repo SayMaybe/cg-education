@@ -1,14 +1,9 @@
-console.log("This is a file.");
+console.log('This is a file.');
 var teacherName = 'Betsy Miller';
 var teacherDepartment = 'Physics';
 console.log(teacherName);
 console.log(teacherDepartment);
-var ratingOne = 1.25;
-var ratingTwo = 5.0;
-var ratingThree = 3.6;
-/*var avgRating = (ratingOne + ratingTwo + ratingThree) / 3;
-avgRating = Math.round(avgRating * 10) / 10;*/
-var teacherRatings = [1.25, 5.0, 5.5];
+var teacherRatings = [[1.25, 5.0], [5.0, 3.2], [4.5, 1.9];
 console.log(teacherRatings);
 function getRatingAvg(teacherRatings) {
   var totalRatings = 0;
@@ -30,6 +25,7 @@ function addTeacherRating(teacherRatings, rating) {
     teacherRatings.push(rating);
     return teacherRatings;
 }
+prompt("Please rate ")
 while (!valid(rating)){
   rating = prompt("Please give a rating between 1.0 and 5.0");
   console.log("rating " + rating);
