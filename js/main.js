@@ -8,8 +8,9 @@ function getRatingAvg(teacherRatings) {
 
 function addTeacherRating(teacherRatings, rating) {
     teacherRatings.push(rating);
-    return teacherRatings;
-}
+   return teacherRatings;
+ }
+
 
 function valid(rating) {
   if (rating >= 1.0 && rating <= 5.0){
@@ -21,20 +22,29 @@ function valid(rating) {
 var teacherNames = ['Betsy', 'Bob', 'Janet'];
 var teacherDepartments = ['Physics', 'Math', 'Programming'];
 var teachersRatings = [[1.25, 5.0], [5.0, 3.0], [4.5, 1.9]];
-console.log(getRatingAvg (teachersRatings[1]));
+/*console.log(getRatingAvg (teachersRatings[1]));*/
 console.log(teachersRatings);
-var rating = 0;
 var shouldIRateATeacher = true;
 
 while (shouldIRateATeacher){
+  var rating = 0;
   index = prompt("Which teacher would you like to rate? Choose a number: \n"
    + " 0. Betsy 1. Bob 2. Janet")
    while (!valid(rating)){
      rating = prompt("Please give " + teacherNames[index] + " a rating between 1.0 and 5.0");
+     if (!valid(rating)){
+       alert("No stupid, I said a number between 1.0 and 5.0!");
+     }
    }
      teachersRatings[index] = addTeacherRating(teachersRatings[index], rating);
-     console.log("teacherRatings " + teachersRatings[index]);
+     var avgTeacherRating = getRatingAvg(teachersRatings);
+     console.log("You gave " + teacherNames[index] + " a rating of " + rating + ".");
 
+     console.log(teacherNames[index] + " now has an average rating of " + avgTeacherRating);
+
+
+
+     console.log(teachersRatings);
      console.log("Good job!");
 
 
