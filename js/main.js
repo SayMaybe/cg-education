@@ -32,20 +32,16 @@ while (shouldIRateATeacher){
    + " 0. Betsy 1. Bob 2. Janet")
    while (!valid(rating)){
      rating = prompt("Please give " + teacherNames[index] + " a rating between 1.0 and 5.0");
+     rating = rating * 1.0;
      if (!valid(rating)){
-       alert("No stupid, I said a number between 1.0 and 5.0!");
+       alert("No stupid, I said a number between 1.0 and 5.0! Press enter to try again.");
      }
    }
      teachersRatings[index] = addTeacherRating(teachersRatings[index], rating);
-     var avgTeacherRating = getRatingAvg(teachersRatings);
+     var avgTeacherRating = getRatingAvg(teachersRatings[index]);
      console.log("You gave " + teacherNames[index] + " a rating of " + rating + ".");
-
-     console.log(teacherNames[index] + " now has an average rating of " + avgTeacherRating);
-
-
-
-     console.log(teachersRatings);
-     console.log("Good job!");
+     console.log("Thank you!" + teacherNames[index] + " now has an average rating of " + avgTeacherRating);
+     prompt("Would you like to rate another teacher?")
 
 
 
