@@ -37,7 +37,7 @@ while (shouldIRateATeacher){
      }
    }
      teachersRatings[index] = addTeacherRating(teachersRatings[index], rating);
-     var avgTeacherRating = getRatingAvg(teachersRatings);
+     var avgTeacherRating = getRatingAvg(teachersRatings[index]);
      console.log("You gave " + teacherNames[index] + " a rating of " + rating + ".");
 
      console.log(teacherNames[index] + " now has an average rating of " + avgTeacherRating);
