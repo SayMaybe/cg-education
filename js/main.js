@@ -19,7 +19,7 @@ function valid(rating) {
 }
 
 function validDept(deptSearched) {
-if (deptSearched == 'Math', || deptSearched == 'Science', || deptSearched == 'Art' || deptSearched == 'English') {
+if (deptSearched == 'Math' || deptSearched == 'Science' || deptSearched == 'Art' || deptSearched == 'English') {
   return true;
 }
   return false;
@@ -29,10 +29,10 @@ var coursesArray = [['Easy Math', 'Math'], ['Hard Math', 'Math'], ['Nearly Impos
                       ['Anthropology', 'Science'], ['Biology', 'Science'],
                       ['Drawing 101', 'Art'], ['Sculpture', 'Art'], ['The Art of Not Giving a F**k', 'Art']];
 
-var teacherNames = ['Betsy', 'Bob', 'Janet'];
+/*var teacherNames = ['Betsy', 'Bob', 'Janet'];
 var teacherDepartments = ['Physics', 'Math', 'Programming'];
 var teachersRatings = [[1.25, 5.0], [5.0, 3.0], [4.5, 1.9]];
-/*console.log(getRatingAvg (teachersRatings[1]));*/
+/*console.log(getRatingAvg (teachersRatings[1]));
 console.log(teachersRatings);
 var shouldIRateATeacher = true;
 
@@ -54,18 +54,23 @@ while (shouldIRateATeacher){
      console.log(teachersRatings);
      shouldIRateATeacher = confirm("Would you like to rate another teacher?")
 
+}*/
+var deptSearched = false;
+while (!validDept(deptSearched)){
+  deptSearched = prompt("Please enter a department in which to search for a class.")
+    if (!validDept(deptSearched)){
+      alert("Your choice does not have any classes.");
+    }
+    else {
+        var newArray = [];
+        for (var i = 0; i < coursesArray.length; i++){
+          if (coursesArray[i][1] == deptSearched){
+            newArray.push(coursesArray[i][0]);
+    }
+    }
+      alert("The classes are " + newArray + ".")
 }
-for (var i = 0; i < courses.length; i++){
-var newArray = [];
-
-if (coursesArray[i][1] == deptSearched){
-  newArray.push(coursesArray[i][0]);
-  newArray[i++];
-}
-else {
-  alert("failed");
-}
-
+  console.log(newArray);
 }
 
 
