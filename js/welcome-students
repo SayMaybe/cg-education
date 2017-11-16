@@ -1,0 +1,16 @@
+var welcomeCollegeStudent = function() {
+  alert("Welcome <student-class>");
+};
+
+var welcomeHsStudent = function() {
+  alert("You're still a <student-class> in high school.");
+};
+
+function gradDate(month, year) {
+  return month + ", " + year;
+}
+function welcomeStudentsByGraduatingClass(year, welcome){
+  if (year == )
+
+
+}
