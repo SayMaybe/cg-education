@@ -18,6 +18,7 @@ body {
 
 .active {
   font-weight: bold;
+  color: pink;
 }
 
 /*styles section*/
@@ -49,7 +50,7 @@ a {
   text-decoration: none;
   color: #FDFEFE;
 }
-
+/********* This is neccessary for nav to work - Erica's code *********/
 nav {
   background-color: #292F30;
   display: flex;
@@ -59,15 +60,8 @@ nav {
   height: 90px;
 }
 
-@media only screen and (max-width: 880px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    height: 140px;
-  }
+header {
+  width: 400px;
 }
 
 .cg-logo {
@@ -77,56 +71,24 @@ nav {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 880px) {
-  .cg-logo {
-    height: 60%;
-    display: flex;
-    align-items: center;
-  }
-}
-
-header {
-  width: 400px;
-}
-
-@media only screen and (max-width: 500px) {
-  header {
-    width: 100%;
-  }
-}
-
 #navigation {
-  align-items: center;
-  justify-content: center;
+/**** these are not necessary for styling - Erica's code ******/
+/*  align-items: center;
+  justify-content: center; */
   margin-right: 10px;
-}
-
-@media only screen and (max-width: 1000px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 nav p {
   display: inline-flex;
   padding: 15px 27px;
   color: #FDFEFE;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans Narrow Bold', sans-serif;
   font-size: 17px;
 }
-
-@media only screen and (max-width: 880px) {
-  nav p {
-    padding: 6px;
-    margin: 0;
-    font-size: 15px;
-  }
-}
-
-nav p:first-child {
+/***** Unnecessary - Erica's code *****/
+/* nav p:first-child {
   border: none;
-}
+} */
 
 nav p:hover {
   text-decoration: underline;
@@ -142,13 +104,6 @@ main {
   flex: 1;
 }
 
-@media only screen and (max-width: 1000px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 section {
   display: inline-flex;
   flex-basis: 45%;
@@ -156,24 +111,6 @@ section {
   border: 2px solid #414042;
   margin: 10px;
   background-color: #FDFEFE;
-}
-
-@media only screen and (max-width: 820px) {
-  section {
-    display: flex;
-    width: 400px;
-    align-self: center;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  section {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    align-self: center;
-    height: 150px;
-  }
 }
 
 .course-type {
@@ -185,14 +122,6 @@ section {
   border-right: 2px solid #414042;
   margin-right: 10px;
   height: 80px;
-}
-
-@media only screen and (max-width: 420px) {
-  .course-type {
-    border: none;
-    margin: 0;
-    padding: 15px;
-  }
 }
 
 .course-type-child {
@@ -208,22 +137,10 @@ section {
   justify-content: center;
 }
 
-@media only screen and (max-width: 420px) {
-  .teacher-semester {
-    padding-bottom: 15px;
-  }
-}
-
 .teacher-semester-child {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-@media only screen and (max-width: 420px) {
-  .teacher-semester-child {
-    padding: 15px;
-  }
 }
 
 .teacher-semester p, .teacher-semester h2 {
@@ -239,4 +156,79 @@ footer {
   border-top: 1px solid #e5e5e5;
   text-align: center;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 880px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .teacher-semester-child {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .teacher-semester {
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .course-type {
+    border: none;
+    margin: 0;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-self: center;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  section {
+    display: flex;
+    width: 400px;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 880px) {
+  nav p {
+    padding: 6px;
+    margin: 0;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .cg-logo {
+    height: 60%;
+    display: flex;
+    align-items: center;
+  }
 }
