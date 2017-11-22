@@ -25,21 +25,36 @@ if (deptSearched == 'Math' || deptSearched == 'Science' || deptSearched == 'Art'
   return false;
 }
 
+
+function getValidTeacherIndex(listOfTeachers) {
+  var index = -1;
+  var stringOfTeachers = "";
+  for (ii = 0; ii < listOfTeachers.length; ii++) {
+    stringOfTeachers = stringOfTeachers + ii + ": " + listOfTeachers[ii];
+    if (ii < listOfTeachers.length - 1) {
+      stringOfTeachers = stringOfTeachers + ", ";
+    }
+  }
+  while (index < 0 || index > listOfTeachers.length - 1) {
+    index = prompt("Which teacher would you like to rate? Choose a number: \n" + stringOfTeachers);
+  }
+  return index;
+}
+
 var coursesArray = [['Easy Math', 'Math'], ['Hard Math', 'Math'], ['Nearly Impossibly Math', 'Math'], ['Math for Dummies', 'Math'],
                       ['Anthropology', 'Science'], ['Biology', 'Science'],
                       ['Drawing 101', 'Art'], ['Sculpture', 'Art'], ['The Art of Not Giving a F**k', 'Art']];
 
-/*var teacherNames = ['Betsy', 'Bob', 'Janet'];
+var teacherNames = ['Betsy', 'Bob', 'Janet'];
 var teacherDepartments = ['Physics', 'Math', 'Programming'];
 var teachersRatings = [[1.25, 5.0], [5.0, 3.0], [4.5, 1.9]];
-/*console.log(getRatingAvg (teachersRatings[1]));
+console.log(getRatingAvg (teachersRatings[1]));
 console.log(teachersRatings);
 var shouldIRateATeacher = true;
 
 while (shouldIRateATeacher){
   var rating = 0;
-  index = prompt("Which teacher would you like to rate? Choose a number: \n"
-   + " 0. Betsy 1. Bob 2. Janet")
+  index = getValidTeacherIndex(teacherNames);
    while (!valid(rating)){
      rating = prompt("Please give " + teacherNames[index] + " a rating between 1.0 and 5.0");
      rating = rating * 1.0;
@@ -54,7 +69,7 @@ while (shouldIRateATeacher){
      console.log(teachersRatings);
      shouldIRateATeacher = confirm("Would you like to rate another teacher?")
 
-}*/
+}
 var deptSearched = false;
 while (!validDept(deptSearched)){
   deptSearched = prompt("Please enter a department in which to search for a class.")
@@ -67,7 +82,7 @@ while (!validDept(deptSearched)){
           if (coursesArray[i][1] == deptSearched){
             newArray.push(coursesArray[i][0]);
     }
-    }
+  }
       alert("The classes are " + newArray + ".")
 }
   console.log(newArray);

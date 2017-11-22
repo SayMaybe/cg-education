@@ -1,0 +1,163 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin:0;
+  padding:0;
+}
+html, body {
+  margin:0;
+  padding:0;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,img {
+  border:0;
+}
+input{
+  border:1px solid #b0b0b0;
+  padding:3px 5px 4px;
+  color:#979797;
+  width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+  font-style:normal;
+  font-weight:normal;
+}
+ol,ul {
+  list-style:none;
+}
+caption,th {
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+q:before,q:after {
+  content:'';
+}
+abbr,acronym { border:0;
+}
+/* Start my CSS*/
+
+  .container {
+    width: 80%;
+    margin: 5%;
+}
+h1 {
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-size: .5em;
+  color: #323232;
+}
+h2 {
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-size: 1.25em;
+  color: #00897f;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: 'PT Serif Regular', serif;
+  font-size: 1.25em;
+  line-height: 2em;
+  color: #323232;
+}
+p {
+  font-family: 'PT Serif Regular', serif;
+  font-size: .875em;
+  line-height: 1.75em;
+  color: #323232;
+}
+
+header {
+  height: 6.504065%;
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.logo {
+  width: 50%;
+  position:absolute;
+  bottom: 20%;
+/*  left: 3.25%;*/
+}
+
+.nav {
+  width: 50%;
+  text-align: right;
+  position:absolute;
+  /*bottom: 20%;*/
+  right: 10.5%;
+}
+
+.nav li {
+  font-family: 'PT Sans-Serif', sans-serif;
+  display:inline;
+}
+
+.name h1 {
+  font-family: 'PT Sans-Serif Narrow Bold', sans-serif;
+  font-size: 1.5em;
+  color: red;
+}
+
+/*styles for courses page*/
+
+.courses-container {
+
+  width: 100%;
+  padding: 0;
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  }
+
+.courses-boxes {
+background: tomato;
+padding: 5px;
+width: 200px;
+/*height: 150px;*/
+flex-flow: column nowrap;
+margin: 20px;
+
+line-height: 150px;
+color: white;
+font-weight: bold;
+font-size: 1em;
+text-align: center;
+}
+.item-1 {
+  width: 70px;
+  background: blue;
+  flex-flow: row nowrap;
+  margin: 10px;
+}
+.item-1 p {
+  color: white;
+}
+
+
+
+/* On devices less than 800px */
+@media(max-width: 800px) {
+  .logo h1 {
+    font-size: 1.375em;
+  }
+
+
+}
+
+/* On devices less than 660px */
+@media(max-width: 660px) {
+  .logo h1 {
+    font-size: 1.375em;
+  }
+
+}
+
+/* On devices wider than 940px */
+@media(min-width: 940px) {
+}
