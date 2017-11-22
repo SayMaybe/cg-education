@@ -1,0 +1,213 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin:0;
+  padding:0;
+}
+html, body {
+  margin:0;
+  padding:0;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,img {
+  border:0;
+}
+input{
+  border:1px solid #b0b0b0;
+  padding:3px 5px 4px;
+  color:#979797;
+  width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+  font-style:normal;
+  font-weight:normal;
+}
+ol,ul {
+  list-style:none;
+}
+caption,th {
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+q:before,q:after {
+  content:'';
+}
+abbr,acronym { border:0;
+}
+/* Start my CSS*/
+
+  .container {
+    width: 90%;
+    margin: 5%;
+}
+h1 {
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-size: .5em;
+  color: #323232;
+}
+h2 {
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-size: .5em;
+  color: #00897f;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: 'PT Serif Regular', serif;
+  font-size: 1em;
+  line-height: 2em;
+  color: #323232;
+}
+p {
+  font-family: 'PT Serif Regular', serif;
+  font-size: .875em;
+  line-height: 1.75em;
+  color: #323232;
+}
+
+header {
+  height: 6.504065%;
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.logo {
+  width: 50%;
+  position:absolute;
+  bottom: 20%;
+  left: 3.25%;
+}
+
+.nav {
+  width: 50%;
+  text-align: right;
+  position:absolute;
+  /*bottom: 20%;*/
+  right: 10.5%
+}
+
+.nav li {
+  font-family: 'PT Sans-Serif', sans-serif;
+  display:inline;
+}
+
+.name h1 {
+  font-family: 'PT Sans-Serif Narrow Bold', sans-serif;
+  font-size: 1.5em;
+  color: red;
+}
+.teacher-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+.teacher-box {
+  /*display:flex;
+  flex-flow: column wrap;*/
+  width: 25%;
+  margin-right: 3%;
+  margin-bottom: 3%;
+
+}
+.teacher-profile {
+  display:flex;
+  flex-flow: column wrap;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+  align-content: flex-start;
+}
+.teacher-image {
+  display:flex;
+  flex-flow: column wrap;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+  align-content: flex-start;
+}
+.teacher-name {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-top: none;
+  justify-content: space-around;
+  align-content: stretch;
+  width: 50%;
+  padding: 2%;
+}
+.courses-grid {
+  display: flex;
+  align-content:stretch;
+  width: 100%;
+
+}
+.teacher-info {
+  display: flex;
+  align-content: stretch;
+  width: 100%;
+  }
+.teacher-courses {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-top: none;
+  justify-content: space-around;
+  align-content: stretch;
+  width: 50%;
+  padding: 2%;
+}
+.teacher-rating {
+  display: flex;
+  flex-flow:column;
+  align-items: center;
+  justify-content: space-around;
+  border-style: solid;
+  border-width: 1px;
+  border-top: none;
+  align-content: stretch;
+  width: 50%;
+  padding: 2%;
+}
+.cat-thumbnail {
+  width:25%;
+  border-radius: 50%;
+  padding: 5%;
+
+}
+
+.teacher-box-2 {
+  flex-basis: 30%;
+  justify-content: space-between;
+  margin-right: 3%;
+  margin-bottom: 3%;
+
+/* On devices less than 800px */
+@media(max-width: 800px) {
+  .logo h1 {
+    font-size: 1.375em;
+  }
+
+
+}
+
+/* On devices less than 660px */
+@media(max-width: 660px) {
+  .logo h1 {
+    font-size: 1.375em;
+  }
+
+}
+
+/* On devices wider than 940px */
+@media(min-width: 940px) {
+}
