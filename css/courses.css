@@ -25,7 +25,7 @@ body {
 
 h1 {
   font-family: 'PT Sans Narrow Bold', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 200;
   color: #323232;
 }
@@ -52,7 +52,7 @@ a {
 }
 /********* This is neccessary for nav to work - Erica's code *********/
 nav {
-  background-color: #292F30;
+  background-color: #151f96;
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 2px 3px .5px #eeeeee;
@@ -100,40 +100,39 @@ main {
   justify-content: space-between;
   flex-basis: 100%;
   margin: 0 100px;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   flex: 1;
 }
 
 section {
   display: inline-flex;
   flex-basis: 45%;
-  height: 80px;
-  border: 2px solid #414042;
+  height: 120px;
+  border: 2px solid #151f96;
   margin: 10px;
   background-color: #FDFEFE;
 }
 
 .course-type {
   display: inline-flex;
-  flex-basis: 40%;
+  flex-basis: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-right: 2px solid #414042;
   margin-right: 10px;
-  height: 80px;
+  height: 120px;
 }
 
 .course-type-child {
   align-items: center;
-  height: 20px;
+  height: 60px;
   justify-content: center;
 }
 
 .teacher-semester {
   display: inline-flex;
-  flex-basis: 60%;
+  flex-basis: 50%; /****** what is flex-basis doing here and elsewhere? */
   flex-direction: column;
   justify-content: center;
 }
