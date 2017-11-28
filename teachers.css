@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+body {
+    /*background-color: #FFF1E8;*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+
+header {
+    width: 400px;
+}
+nav {
+    background-color: #151f96;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 3px .5px #eeeeee;
+    margin-bottom: 40px;
+    height: 90px;
+}
+nav a {
+    color: pink;
+}
+
+.active {
+    color: aquamarine;
+}
+nav p {
+    display: inline-flex;
+    padding: 15px 27px;
+    color: white;
+    font-family: 'PT Sans Narrow Bold', sans-serif;
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 125%
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.paddingBlock {
+    padding: 20px 0;
+}
+
+.eqWrap {
+    display: flex;
+}
+
+.eq {
+    padding: 10px;
+}
+
+.equalHW {
+    flex: 1;
+}
+.equalHMRWrap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.equalHM {
+    width: 32%;
+}
+.equalHMR {
+    width: 32%;
+    margin-bottom: 2%;
+    border-style: solid;
+    border-width: 1px;
+}
+
