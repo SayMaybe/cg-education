@@ -1,22 +1,18 @@
-function getRatingAvg(teacherRatings) {
+/*function getRatingAvg(teacherRatings) {
   var totalRatings = 0;
   for (var i = 0; i < teacherRatings.length; i++) {
       totalRatings = totalRatings + teacherRatings[i];
   }
   return Math.round((totalRatings / teacherRatings.length) * 10) / 10;
-}
+}*/
 
-function addTeacherRating(teacherRatings, rating) {
-    teacherRatings.push(rating);
-   return teacherRatings;
- }
 
-function valid(rating) {
+/*function valid(rating) {
   if (rating >= 1.0 && rating <= 5.0){
     return true;
   }
   return false;
-}
+}*/
 
 function validDept(deptSearched) {
 if (deptSearched == 'Math' || deptSearched == 'Science' || deptSearched == 'Art' || deptSearched == 'English') {
@@ -25,21 +21,6 @@ if (deptSearched == 'Math' || deptSearched == 'Science' || deptSearched == 'Art'
   return false;
 }
 
-
-function getValidTeacherIndex(listOfTeachers) {
-  var index = -1;
-  var stringOfTeachers = "";
-  for (ii = 0; ii < listOfTeachers.length; ii++) {
-    stringOfTeachers = stringOfTeachers + ii + ": " + listOfTeachers[ii];
-    if (ii < listOfTeachers.length - 1) {
-      stringOfTeachers = stringOfTeachers + ", ";
-    }
-  }
-  while (index < 0 || index > listOfTeachers.length - 1) {
-    index = prompt("Which teacher would you like to rate? Choose a number: \n" + stringOfTeachers);
-  }
-  return index;
-}
 
 var coursesArray = [['Easy Math', 'Math'], ['Hard Math', 'Math'], ['Nearly Impossibly Math', 'Math'], ['Math for Dummies', 'Math'],
                       ['Anthropology', 'Science'], ['Biology', 'Science'],
@@ -67,7 +48,7 @@ while (shouldIRateATeacher){
      console.log("You gave " + teacherNames[index] + " a rating of " + rating + ".");
      console.log("Thank you! " + teacherNames[index] + " now has an average rating of " + avgTeacherRating);
      console.log(teachersRatings);
-     shouldIRateATeacher = confirm("Would you like to rate another teacher?")
+     /*shouldIRateATeacher = confirm("Would you like to rate another teacher?")*/
 
 }
 var deptSearched = false;
@@ -88,16 +69,21 @@ while (!validDept(deptSearched)){
   console.log(newArray);
 }
 
-
-
-/*console.log(studentName);
-var major = 'Astrology';
-var email = 'jos.camel@esp.com';
-var gpa = '3.2';
-var course = 'Goat Tending';
-var semester = "Fall 2017";
-console.log("Major: " + major);
-console.log("email: " + email)
-console.log("GPA: " + gpa)
-console.log("Course: " + course)
-console.log("Semester: " + semester)*/
+/*function addTeacherRating(teacherRatings, rating) {
+    teacherRatings.push(rating);
+   return teacherRatings;
+ }*/
+ /*function getValidTeacherIndex(listOfTeachers) {
+   var index = -1;
+   var stringOfTeachers = "";
+   for (ii = 0; ii < listOfTeachers.length; ii++) {
+     stringOfTeachers = stringOfTeachers + ii + ": " + listOfTeachers[ii];
+     if (ii < listOfTeachers.length - 1) {
+       stringOfTeachers = stringOfTeachers + ", ";
+     }
+   }
+   while (index < 0 || index > listOfTeachers.length - 1) {
+     index = prompt("Which teacher would you like to rate? Choose a number: \n" + stringOfTeachers);
+   }
+   return index;
+ }*/
