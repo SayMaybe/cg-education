@@ -4,6 +4,7 @@ var teacher = {
   addRating: function(newRating) {
     this.ratings.push(newRating);
     this.getRatingAvg(newRating);
+    alert("Thank you.");
     },
   getRatingAvg: function() {
     var totalRatings = 0;
@@ -16,7 +17,7 @@ var teacher = {
   validRating: function(newRating) {
     if (newRating >= 1.0 && newRating <= 5.0){
       this.addRating(newRating);
-
+      return true;
     }
     return false;
   }
