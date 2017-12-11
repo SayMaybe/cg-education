@@ -1,22 +1,23 @@
 var teacher = {
   name: "The Colonel", department: "International Studies",
   ratings: [3.0, 2.5, 1.9],
+  avgRating: 0.0,
   addRating: function(newRating) {
     this.ratings.push(newRating);
-    this.getRatingAvg(newRating);
-    alert("Thank you.");
+    this.calculateRatingAvg();
+    alert("Thank you, " + this.name + " has an average rating of " + this.avgRating + ".");
     },
-  getRatingAvg: function() {
+  calculateRatingAvg: function() {
     var totalRatings = 0;
     for (var i = 0; i < this.ratings.length; i++) {
       totalRatings = totalRatings + this.ratings[i];
     }
-    return Math.round((totalRatings / this.ratings.length) * 10) / 10;
+    this.avgRating = Math.round((totalRatings / this.ratings.length) * 10) / 10;
   },
 
   validRating: function(newRating) {
     if (newRating >= 1.0 && newRating <= 5.0){
-      this.addRating(newRating);
+
       return true;
     }
     return false;
@@ -35,6 +36,7 @@ while (shouldIRateATeacher){
        alert("I said a number between 1.0 and 5.0! Press enter to try again.");
      };
    };
+teacher.addRating(newRating);
 shouldIRateATeacher = false;
  };
 console.log(teacher.ratings);
