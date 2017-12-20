@@ -44,7 +44,7 @@ console.log(teacher.ratings);
 var course = {
 name: "Junk Shopping",
 department: "International Studies",
-teacher: teacher.name,
+teacher: teacher,
 semester: "Fall 2017",
 validDept: function(deptSearched) {
   if (deptSearched == this.department) {
