@@ -6,7 +6,7 @@ department: "International Studies",
 teacher: "The Colonel",
 semester: "Fall 2017",
 validDept: function(deptSearched) {
-  if (deptSearched == this.department) {
+  if (deptSearched.toLowerCase() === this.department.toLowerCase()) {
     return true;
   } else {
     return false;
@@ -22,6 +22,6 @@ if (!course.validDept(deptSearched)){
       alert("Your choice does not have any classes.");
     }
     else {
-            alert("The classes are " + course.department + ".");
+            alert("The classes are " + course.name + ".");
           }
       }
