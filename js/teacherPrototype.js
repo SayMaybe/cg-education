@@ -30,4 +30,5 @@ console.log("Name: " + teacherBen.name + "\nDept: " + teacherBen.department + "\
 var teacherJoe = new Teacher("Joe", "Surfing", [2.3, 4.8, 3.9]);
 console.log("Name: " + teacherJoe.name + "\nDept: " + teacherJoe.department + "\nRatings: " + teacherJoe.ratings);
 
-Teacher.prototype.addRating(3.2)
+teacherSally.addRating(3.2)
+console.log(teacherSally.ratings);
