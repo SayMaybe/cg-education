@@ -22,3 +22,8 @@ if (!Course.prototype.validDept(deptSearched)){
     }
     else {
             alert("The classes are " + Course.protype.name + ".");
+
+var allTheCourses = [];
+allTheCourses.push(new Course("Junk Shopping", "International Studies", "The Colonel", "Fall 2017"));
+
+/*instead of "The Colonel" call getTeacherByName("The Colonel")*/
