@@ -30,7 +30,7 @@ Teacher.prototype.getRatingAvg = function() {
 var teacherSally = new Teacher("Sally", "Physics", [5.0, 4.3, 4.1],);
 console.log("Name: " + teacherSally.name + "\nDept: " + teacherSally.department + "\nRatings: " +
     teacherSally.ratings + " Avg.: " + teacherSally.avgRating);
-/*var teacherBen = new Teacher("Ben", "Astronomy", [3.2, 3.6, 4.5]);
+var teacherBen = new Teacher("Ben", "Astronomy", [3.2, 3.6, 4.5]);
 console.log("Name: " + teacherBen.name + "\nDept: " + teacherBen.department + "\nRatings: " + teacherBen.ratings);
 var teacherJoe = new Teacher("Joe", "Surfing", [2.3, 4.8, 3.9]);
 console.log("Name: " + teacherJoe.name + "\nDept: " + teacherJoe.department + "\nRatings: " + teacherJoe.ratings);*/
@@ -38,7 +38,8 @@ console.log("Name: " + teacherJoe.name + "\nDept: " + teacherJoe.department + "\
 teacherSally.addRating(3.2);
 console.log(teacherSally.ratings);
 console.log("Name: " + teacherSally.name + "\nDept: " + teacherSally.department + "\nRatings: " + teacherSally.ratings +
-    " Avg.: " + teacherSally.avgRating);
+    "\nAvg.: " + teacherSally.avgRating);
 
+var teachersArray = [teacherSally, teacherBen, teacherJoe];
 /*create teacher array, put teacher array
 make a function to search thru teacher array for teacher by Name and return that teacher object

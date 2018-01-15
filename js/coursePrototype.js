@@ -13,6 +13,17 @@ Course.prototype.validDept = function(deptSearched) {
     }
   }
 
+function getTeacherbyName(name) {
+  for (var i = 0; i < teachersArray.length; i++) {
+    if (teacher[i] == name) {
+      return teacher.name;
+
+    }
+
+  }
+
+};
+
 var deptSearched = "";
 
 if (!Course.prototype.validDept(deptSearched)){
@@ -24,6 +35,4 @@ if (!Course.prototype.validDept(deptSearched)){
             alert("The classes are " + Course.protype.name + ".");
 
 var allTheCourses = [];
-allTheCourses.push(new Course("Junk Shopping", "International Studies", "The Colonel", "Fall 2017"));
-
-/*instead of "The Colonel" call getTeacherByName("The Colonel")*/
+allTheCourses.push(new Course("Surfing", "Phys. Ed.", getTeacherByName(teacherJoe), "Fall 2017"));
